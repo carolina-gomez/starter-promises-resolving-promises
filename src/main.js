@@ -4,10 +4,10 @@ const promise = welcome();
 
 console.log(promise);
 
-const question = "";
-const tellPromise = tell(question);
+const question = "Hello?";
 
-tellPromise.then((fortune) => {
+tell(question)
+.then((fortune) => {
     console.log(question);
     console.log(fortune);
 })
