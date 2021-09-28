@@ -10,6 +10,5 @@ const tellPromise = tell(question);
 tellPromise.then((fortune) => {
     console.log(question);
     console.log(fortune);
-}).catch((error) => {
-    console.log(error)
 })
+.catch(console.error);
